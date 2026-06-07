@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+#or use build-backend = 'setuptools.backends.legacy:build' if using higher version of pip
+
+[project]
+name = "adaptive-playlist-data-pipeline"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.32,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "ruff>=0.4",
+]
