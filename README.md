@@ -1,5 +1,24 @@
 High Level Architecture:
 
+-------------------
+Data Ingestion
+-------------------
+Spotify API
+    |
+    v
+Ingestion Pipeline
+    |
+    +--> PostgreSQL
+    |
+    +--> Embedding Generation
+              |
+              v
+          Pinecone
+
+
+--------------------
+Agent Flow
+--------------------
 User Query
     |
     v

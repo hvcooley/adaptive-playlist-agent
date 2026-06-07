@@ -1,0 +1,237 @@
+{
+    "tracks": {
+        "href": "https://api.spotify.com/v1/search?offset=0&limit=5&query=track%3AUse%20artist%3AKings%20of%20Leon&type=track",
+        "limit": 5,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 3,
+        "items": [
+            {
+                "album": {
+                    "album_type": "album",
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https://open.spotify.com/artist/2qk9voo8llSGYcZ6xrBzKx"
+                            },
+                            "href": "https://api.spotify.com/v1/artists/2qk9voo8llSGYcZ6xrBzKx",
+                            "id": "2qk9voo8llSGYcZ6xrBzKx",
+                            "name": "Kings of Leon",
+                            "type": "artist",
+                            "uri": "spotify:artist:2qk9voo8llSGYcZ6xrBzKx"
+                        }
+                    ],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/5CZR6ljD0x9fTiS4mh9wMp"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/5CZR6ljD0x9fTiS4mh9wMp",
+                    "id": "5CZR6ljD0x9fTiS4mh9wMp",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b2732519d01c0cca06f134eeadd8"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e022519d01c0cca06f134eeadd8"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d000048512519d01c0cca06f134eeadd8"
+                        }
+                    ],
+                    "is_playable": true,
+                    "name": "Only By The Night",
+                    "release_date": "2008-09-23",
+                    "release_date_precision": "day",
+                    "total_tracks": 11,
+                    "type": "album",
+                    "uri": "spotify:album:5CZR6ljD0x9fTiS4mh9wMp"
+                },
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/2qk9voo8llSGYcZ6xrBzKx"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/2qk9voo8llSGYcZ6xrBzKx",
+                        "id": "2qk9voo8llSGYcZ6xrBzKx",
+                        "name": "Kings of Leon",
+                        "type": "artist",
+                        "uri": "spotify:artist:2qk9voo8llSGYcZ6xrBzKx"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 230760,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "USRC10800301"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/5VGlqQANWDKJFl0MBG3sg2"
+                },
+                "href": "https://api.spotify.com/v1/tracks/5VGlqQANWDKJFl0MBG3sg2",
+                "id": "5VGlqQANWDKJFl0MBG3sg2",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Use Somebody",
+                "track_number": 4,
+                "type": "track",
+                "uri": "spotify:track:5VGlqQANWDKJFl0MBG3sg2"
+            },
+            {
+                "album": {
+                    "album_type": "compilation",
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                            },
+                            "href": "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                            "id": "0LyfQWJT6nXafLPZqxe9Of",
+                            "name": "Various Artists",
+                            "type": "artist",
+                            "uri": "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                        }
+                    ],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/0LplRIGNE4ds9AmJ6w0qXa"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/0LplRIGNE4ds9AmJ6w0qXa",
+                    "id": "0LplRIGNE4ds9AmJ6w0qXa",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b273369c5ebfe2b60892107b0265"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e02369c5ebfe2b60892107b0265"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d00004851369c5ebfe2b60892107b0265"
+                        }
+                    ],
+                    "is_playable": true,
+                    "name": "Mother's Day Songs",
+                    "release_date": "2018-03-02",
+                    "release_date_precision": "day",
+                    "total_tracks": 31,
+                    "type": "album",
+                    "uri": "spotify:album:0LplRIGNE4ds9AmJ6w0qXa"
+                },
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/2qk9voo8llSGYcZ6xrBzKx"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/2qk9voo8llSGYcZ6xrBzKx",
+                        "id": "2qk9voo8llSGYcZ6xrBzKx",
+                        "name": "Kings of Leon",
+                        "type": "artist",
+                        "uri": "spotify:artist:2qk9voo8llSGYcZ6xrBzKx"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 231093,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "USRC10800301"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/7D04SIiYAZq6Kpc4qFhBKY"
+                },
+                "href": "https://api.spotify.com/v1/tracks/7D04SIiYAZq6Kpc4qFhBKY",
+                "id": "7D04SIiYAZq6Kpc4qFhBKY",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Use Somebody",
+                "track_number": 30,
+                "type": "track",
+                "uri": "spotify:track:7D04SIiYAZq6Kpc4qFhBKY"
+            },
+            {
+                "album": {
+                    "album_type": "single",
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https://open.spotify.com/artist/2qk9voo8llSGYcZ6xrBzKx"
+                            },
+                            "href": "https://api.spotify.com/v1/artists/2qk9voo8llSGYcZ6xrBzKx",
+                            "id": "2qk9voo8llSGYcZ6xrBzKx",
+                            "name": "Kings of Leon",
+                            "type": "artist",
+                            "uri": "spotify:artist:2qk9voo8llSGYcZ6xrBzKx"
+                        }
+                    ],
+                    "external_urls": {
+                        "spotify": "https://open.spotify.com/album/6pTvUsrfqdsBqCEqhNCqgS"
+                    },
+                    "href": "https://api.spotify.com/v1/albums/6pTvUsrfqdsBqCEqhNCqgS",
+                    "id": "6pTvUsrfqdsBqCEqhNCqgS",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https://i.scdn.co/image/ab67616d0000b27378d10d7e0b2f73f95134c5d7"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https://i.scdn.co/image/ab67616d00001e0278d10d7e0b2f73f95134c5d7"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https://i.scdn.co/image/ab67616d0000485178d10d7e0b2f73f95134c5d7"
+                        }
+                    ],
+                    "is_playable": true,
+                    "name": "Use Somebody",
+                    "release_date": "2009-02-26",
+                    "release_date_precision": "day",
+                    "total_tracks": 4,
+                    "type": "album",
+                    "uri": "spotify:album:6pTvUsrfqdsBqCEqhNCqgS"
+                },
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https://open.spotify.com/artist/2qk9voo8llSGYcZ6xrBzKx"
+                        },
+                        "href": "https://api.spotify.com/v1/artists/2qk9voo8llSGYcZ6xrBzKx",
+                        "id": "2qk9voo8llSGYcZ6xrBzKx",
+                        "name": "Kings of Leon",
+                        "type": "artist",
+                        "uri": "spotify:artist:2qk9voo8llSGYcZ6xrBzKx"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 231800,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "USRC10800301"
+                },
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/track/3d8XPKVjyEMD57KoqfKRUu"
+                },
+                "href": "https://api.spotify.com/v1/tracks/3d8XPKVjyEMD57KoqfKRUu",
+                "id": "3d8XPKVjyEMD57KoqfKRUu",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Use Somebody",
+                "track_number": 1,
+                "type": "track",
+                "uri": "spotify:track:3d8XPKVjyEMD57KoqfKRUu"
+            }
+        ]
+    }
+}
