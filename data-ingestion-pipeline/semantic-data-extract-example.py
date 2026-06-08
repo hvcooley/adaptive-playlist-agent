@@ -21,7 +21,21 @@ if response.status_code != 200:
 
 data = response.json()
 
-for section in data["parse"]["sections"]:
-    print(section["index"], section["line"])
+sections = data["parse"]["sections"]
 
-#Next: Confirm that section with 'Artistry' is in the response, then query that section for the text content
+artistry_index = next(
+    (i for i, s in enumerate(sections) if s["line"] == "Artistry"), None
+)
+
+if artistry_index is None:
+    raise ValueError("'Artistry' section not found in response")
+
+artistry_toclevel = sections[artistry_index]["toclevel"]
+
+section_labels_with_semantic_text = []
+for section in sections[artistry_index + 1:]:
+    if section["toclevel"] <= artistry_toclevel:
+        break
+    section_labels_with_semantic_text.append(section["line"])
+
+print(section_labels_with_semantic_text)
