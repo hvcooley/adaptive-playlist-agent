@@ -1,7 +1,11 @@
 import requests
-import BeautifulSoup
+from bs4 import BeautifulSoup
+
 
 def fetch_musical_vibe_section_labels(page_name: str) -> list[str]:
+    '''
+    Experimental Function. Do not use in data pipeline
+    '''
     url = (
         "https://en.wikipedia.org/w/api.php"
         f"?action=parse"
@@ -69,7 +73,7 @@ def fetch_section_titles_and_indexes(page_name: str) -> dict[str, int]:
     return {section["line"]: int(section["index"]) for section in sections}
 
 
-def collect_semantic_text_Data(page_name: str, section_titles_and_indexes: dict[str][str]) -> str:
+def collect_semantic_text_data(page_name: str, section_titles_and_indexes: dict[str, int]) -> str:
     """
     Collects all the text data ideal for semantic meaning embedding from a band or artist's wikipedia page
 
@@ -92,7 +96,11 @@ def collect_semantic_text_Data(page_name: str, section_titles_and_indexes: dict[
             "format": "json"
         }
 
-        response = requests.get("https://en.wikipedia.org/w/api.php", params=params)
+        headers = {
+            "User-Agent": "adaptive-playlist-agent/1.0 (https://github.com/yourusername/adaptive-playlist-agent; contact: your-email@example.com)"
+        }
+
+        response = requests.get("https://en.wikipedia.org/w/api.php", params=params, headers=headers)
 
         html = response.json()["parse"]["text"]
 
@@ -104,6 +112,51 @@ def collect_semantic_text_Data(page_name: str, section_titles_and_indexes: dict[
             for p in soup.find_all("p")
         )
         all_semantic_text = all_semantic_text + text
+    
+    return all_semantic_text
+
+TEST_ARTISTS = [
+    "Blink-182",
+    "Kings_of_Leon",
+    "Kendrick_Lamar",
+    "Taylor_Swift",
+    "The_Beatles",
+    "Daft_Punk",
+    "Treaty_Oak_Revival",
+    "Imagine_Dragons",
+    "Tame_Impala",
+    "Billie_Eilish",
+]
+
+
+def collect_artist_corpus(artists: list[str]) -> dict[str, str]:
+    """
+    Collects all semantic text data from Wikipedia for a list of artists/bands.
+
+    Args:
+        artists: List of artist or band names matching their Wikipedia page titles.
+
+    Returns:
+        dict mapping each artist name to their combined Wikipedia text. Artists
+        whose pages could not be fetched are omitted and logged to stderr.
+    """
+    corpus: dict[str, str] = {}
+
+    for artist in artists:
+        try:
+            section_titles_and_indexes = fetch_section_titles_and_indexes(artist)
+            text = collect_semantic_text_data(artist, section_titles_and_indexes)
+            corpus[artist] = text
+            print(f"[OK] {artist} — {len(text)} chars")
+        except Exception as exc:
+            print(f"[SKIP] {artist} — {exc}")
+
+    return corpus
+
 
 if __name__ == "__main__":
-    print(fetch_musical_vibe_section_labels("Blink-182"))
+    corpus = collect_artist_corpus(TEST_ARTISTS)
+    print(f"\nCollected data for {len(corpus)} artists.")
+    for artist, text in corpus.items():
+        preview = text[:120].replace("\n", " ")
+        print(f"  {artist}: {preview}…")
