@@ -1,3 +1,5 @@
+import os
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -114,20 +116,6 @@ def collect_semantic_text_data(page_name: str, section_titles_and_indexes: dict[
 
     return sections
 
-TEST_ARTISTS = [
-    "Blink-182",
-    "Kings_of_Leon",
-    "Kendrick_Lamar",
-    "Taylor_Swift",
-    "The_Beatles",
-    "Daft_Punk",
-    "Treaty_Oak_Revival",
-    "Imagine_Dragons",
-    "Tame_Impala",
-    "Billie_Eilish",
-]
-
-
 def collect_artist_corpus(artists: list[str]) -> list[dict]:
     """
     Collects Wikipedia section text for a list of artists and returns Pinecone-ready chunks.
@@ -160,8 +148,16 @@ def collect_artist_corpus(artists: list[str]) -> list[dict]:
 
 
 if __name__ == "__main__":
+    from fetch_spotify_artists import fetch_all_artists
+    TEST_ARTISTS = fetch_all_artists()
     chunks = collect_artist_corpus(TEST_ARTISTS)
     print(f"\nCollected {len(chunks)} chunks across {len(TEST_ARTISTS)} artists.")
-    for chunk in chunks[:5]:
-        preview = chunk["text"][:100].replace("\n", " ")
-        print(f"  [{chunk['metadata']['artist']} / {chunk['metadata']['section']}] {preview}…")
+
+    output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "corpus_preview.txt")
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(f"Collected {len(chunks)} chunks across {len(TEST_ARTISTS)} artists.\n\n")
+        for chunk in chunks:
+            f.write(f"[{chunk['metadata']['artist']} / {chunk['metadata']['section']}]\n")
+            f.write(chunk["text"])
+            f.write("\n\n" + "-" * 80 + "\n\n")
+    print(f"Full corpus written to {output_path}")
