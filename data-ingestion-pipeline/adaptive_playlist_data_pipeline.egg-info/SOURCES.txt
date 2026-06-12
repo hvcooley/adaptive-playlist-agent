@@ -1,3 +1,4 @@
+fetch_spotify_artists.py
 pyproject.toml
 adaptive_playlist_data_pipeline.egg-info/PKG-INFO
 adaptive_playlist_data_pipeline.egg-info/SOURCES.txt

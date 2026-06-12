@@ -48,10 +48,10 @@ def _search_artists_for_genre(
 
         items = data.get("artists", {}).get("items") or []
         for artist in items:
-            if artist and artist.get("popularity", 0) >= min_popularity:
+            if artist: #and artist.get("popularity", 0) >= min_popularity: - no popularity field returned in this API
                 results[artist["id"]] = {
                     "name": artist["name"],
-                    "popularity": artist["popularity"],
+                    #"popularity": artist["popularity"],
                 }
 
         if not data.get("artists", {}).get("next"):
@@ -66,8 +66,8 @@ def fetch_all_artists(
     genres: list[str] | None = None,
     min_popularity: int = 50,
     target_count: int = 750,
-    pages_per_genre: int = 4,
-    page_size: int = 50,
+    pages_per_genre: int = 20,
+    page_size: int = 10,
 ) -> list[str]:
     """
     Fetches artist names from Spotify across the given genres.
@@ -112,8 +112,11 @@ def fetch_all_artists(
             print(f"  [SKIP] {genre!r} — {exc}", file=sys.stderr)
 
     sorted_artists = sorted(
-        all_artists.values(), key=lambda a: a["popularity"], reverse=True
+        all_artists.values(), key=lambda a: a["name"], reverse=True
     )
+    # sorted_artists = sorted(
+    #     all_artists.values(), key=lambda a: a["popularity"], reverse=True
+    # )
     return [
         a["name"].replace(" ", "_") for a in sorted_artists[:target_count]
     ]
