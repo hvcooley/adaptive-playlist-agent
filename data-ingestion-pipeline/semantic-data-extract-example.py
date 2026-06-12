@@ -73,24 +73,23 @@ def fetch_section_titles_and_indexes(page_name: str) -> dict[str, int]:
     return {section["line"]: int(section["index"]) for section in sections}
 
 
-def collect_semantic_text_data(page_name: str, section_titles_and_indexes: dict[str, int]) -> str:
+def collect_semantic_text_data(page_name: str, section_titles_and_indexes: dict[str, int]) -> list[dict]:
     """
-    Collects all the text data ideal for semantic meaning embedding from a band or artist's wikipedia page
+    Collects text data from each section of a band or artist's Wikipedia page.
 
     Args:
-        page_name: The band or artist name that is the wikipedia page title.
-        section_titles_and_indexes: A dictionary where keys are the section title and the value is the section title's index.
-        
-    Returns:
-       str: A single string with all the textual data from the artist or band's wikipedia page
-    """
-    all_semantic_text = ""
-    for section_ndx, section_name in enumerate(section_titles_and_indexes):
+        page_name: The band or artist name that is the Wikipedia page title.
+        section_titles_and_indexes: A dictionary where keys are section titles and values are section indexes.
 
+    Returns:
+        list[dict]: One dict per non-empty section with keys 'section_name' and 'text'.
+    """
+    sections = []
+    for section_name, section_index in section_titles_and_indexes.items():
         params = {
             "action": "parse",
             "page": page_name,
-            "section": section_ndx,
+            "section": section_index,
             "prop": "text",
             "formatversion": 2,
             "format": "json"
@@ -103,17 +102,17 @@ def collect_semantic_text_data(page_name: str, section_titles_and_indexes: dict[
         response = requests.get("https://en.wikipedia.org/w/api.php", params=params, headers=headers)
 
         html = response.json()["parse"]["text"]
-
-        # Step 3: Extract plain text
         soup = BeautifulSoup(html, "html.parser")
 
         text = "\n\n".join(
             p.get_text(" ", strip=True)
             for p in soup.find_all("p")
         )
-        all_semantic_text = all_semantic_text + text
-    
-    return all_semantic_text
+
+        if text.strip():
+            sections.append({"section_name": section_name, "text": text})
+
+    return sections
 
 TEST_ARTISTS = [
     "Blink-182",
@@ -129,34 +128,40 @@ TEST_ARTISTS = [
 ]
 
 
-def collect_artist_corpus(artists: list[str]) -> dict[str, str]:
+def collect_artist_corpus(artists: list[str]) -> list[dict]:
     """
-    Collects all semantic text data from Wikipedia for a list of artists/bands.
+    Collects Wikipedia section text for a list of artists and returns Pinecone-ready chunks.
 
     Args:
         artists: List of artist or band names matching their Wikipedia page titles.
 
     Returns:
-        dict mapping each artist name to their combined Wikipedia text. Artists
-        whose pages could not be fetched are omitted and logged to stderr.
+        list[dict]: Each dict has 'id', 'text', and 'metadata' keys ready for Pinecone upsert.
+                    Artists whose pages could not be fetched are skipped and logged to stderr.
     """
-    corpus: dict[str, str] = {}
+    chunks: list[dict] = []
 
     for artist in artists:
         try:
             section_titles_and_indexes = fetch_section_titles_and_indexes(artist)
-            text = collect_semantic_text_data(artist, section_titles_and_indexes)
-            corpus[artist] = text
-            print(f"[OK] {artist} — {len(text)} chars")
+            sections = collect_semantic_text_data(artist, section_titles_and_indexes)
+            for section in sections:
+                chunk_id = f"{artist}__{section['section_name'].replace(' ', '_')}"
+                chunks.append({
+                    "id": chunk_id,
+                    "text": section["text"],
+                    "metadata": {"artist": artist, "section": section["section_name"]},
+                })
+            print(f"[OK] {artist} — {len(sections)} sections")
         except Exception as exc:
-            print(f"[SKIP] {artist} — {exc}")
+            print(f"[SKIP] {artist} — {exc}", file=__import__('sys').stderr)
 
-    return corpus
+    return chunks
 
 
 if __name__ == "__main__":
-    corpus = collect_artist_corpus(TEST_ARTISTS)
-    print(f"\nCollected data for {len(corpus)} artists.")
-    for artist, text in corpus.items():
-        preview = text[:120].replace("\n", " ")
-        print(f"  {artist}: {preview}…")
+    chunks = collect_artist_corpus(TEST_ARTISTS)
+    print(f"\nCollected {len(chunks)} chunks across {len(TEST_ARTISTS)} artists.")
+    for chunk in chunks[:5]:
+        preview = chunk["text"][:100].replace("\n", " ")
+        print(f"  [{chunk['metadata']['artist']} / {chunk['metadata']['section']}] {preview}…")
