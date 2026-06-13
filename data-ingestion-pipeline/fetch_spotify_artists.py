@@ -20,13 +20,7 @@ def _get_token(client_id: str, client_secret: str) -> str:
     return response.json()["access_token"]
 
 
-def _search_artists_for_genre(
-    token: str,
-    genre: str,
-    min_popularity: int,
-    pages: int,
-    page_size: int,
-) -> dict[str, dict]:
+def _search_artists_for_genre(token: str, genre: str, min_popularity: int, pages: int,page_size: int,) -> dict[str, dict]:
     """Returns {artist_id: {name, popularity}} for one genre."""
     results: dict[str, dict] = {}
     headers = {"Authorization": f"Bearer {token}"}
@@ -77,14 +71,15 @@ def fetch_all_artists(
 
     Args:
         genres: Genre list to search. Defaults to ALL_GENRES from genres.py.
-        min_popularity: Spotify popularity score cutoff (0–100). 50 filters
+        min_popularity: NOT COMPATIBLE CURRENTLY - search response does not return popualrity field. 
+            Spotify popularity score cutoff (0–100). 50 filters
             for artists with meaningful mainstream presence (~300K+ listeners).
         target_count: Stop collecting after this many unique artists.
         pages_per_genre: Number of paginated requests per genre (page_size results each).
         page_size: Results per API request (max 50).
 
     Returns:
-        Artist names deduplicated and sorted by popularity descending, with
+        Artist names deduplicated and sorted by alphabetical order, with
         spaces replaced by underscores for use as Wikipedia page titles.
     """
     load_dotenv(os.path.join(_PROJECT_ROOT, ".env"))

@@ -86,33 +86,47 @@ def collect_semantic_text_data(page_name: str, section_titles_and_indexes: dict[
     Returns:
         list[dict]: One dict per non-empty section with keys 'section_name' and 'text'.
     """
+    params = {
+        "action": "parse",
+        "page": page_name,
+        "prop": "text",
+        "formatversion": 2,
+        "format": "json"
+    }
+
+    headers = {
+        "User-Agent": "adaptive-playlist-agent/1.0 (https://github.com/yourusername/adaptive-playlist-agent; contact: your-email@example.com)"
+    }
+
+    response = requests.get("https://en.wikipedia.org/w/api.php", params=params, headers=headers)
+    html = response.json()["parse"]["text"]
+    soup = BeautifulSoup(html, "html.parser")
+
+    target_titles = set(section_titles_and_indexes.keys())
+    HEADER_TAGS = {"h2", "h3", "h4"}
+
     sections = []
-    for section_name, section_index in section_titles_and_indexes.items():
-        params = {
-            "action": "parse",
-            "page": page_name,
-            "section": section_index,
-            "prop": "text",
-            "formatversion": 2,
-            "format": "json"
-        }
+    current_title = None
+    current_paragraphs = []
 
-        headers = {
-            "User-Agent": "adaptive-playlist-agent/1.0 (https://github.com/yourusername/adaptive-playlist-agent; contact: your-email@example.com)"
-        }
+    for element in soup.find_all(["h2", "h3", "h4", "p"]):
+        if element.name in HEADER_TAGS:
+            if current_title in target_titles and current_paragraphs:
+                text = "\n\n".join(current_paragraphs)
+                if text.strip():
+                    sections.append({"section_name": current_title, "text": text})
+            headline = element.find("span", class_="mw-headline")
+            current_title = headline.get_text(strip=True) if headline else element.get_text(strip=True)
+            current_paragraphs = []
+        elif element.name == "p" and current_title in target_titles:
+            text = element.get_text(" ", strip=True)
+            if text:
+                current_paragraphs.append(text)
 
-        response = requests.get("https://en.wikipedia.org/w/api.php", params=params, headers=headers)
-
-        html = response.json()["parse"]["text"]
-        soup = BeautifulSoup(html, "html.parser")
-
-        text = "\n\n".join(
-            p.get_text(" ", strip=True)
-            for p in soup.find_all("p")
-        )
-
+    if current_title in target_titles and current_paragraphs:
+        text = "\n\n".join(current_paragraphs)
         if text.strip():
-            sections.append({"section_name": section_name, "text": text})
+            sections.append({"section_name": current_title, "text": text})
 
     return sections
 
