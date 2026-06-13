@@ -2,6 +2,8 @@ import os
 
 import requests
 from bs4 import BeautifulSoup
+from datetime import datetime
+
 
 
 def fetch_musical_vibe_section_labels(page_name: str) -> list[str]:
@@ -167,7 +169,10 @@ if __name__ == "__main__":
     chunks = collect_artist_corpus(TEST_ARTISTS)
     print(f"\nCollected {len(chunks)} chunks across {len(TEST_ARTISTS)} artists.")
 
-    output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "corpus_preview.txt")
+
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "corpus_previews", "full_data_previews")
+    output_path = os.path.join(output_dir, f"full_corpus_preview_{timestamp}.txt")
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(f"Collected {len(chunks)} chunks across {len(TEST_ARTISTS)} artists.\n\n")
         for chunk in chunks:

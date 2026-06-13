@@ -1,4 +1,5 @@
 import os
+from datetime import datetime
 
 from wikipedia_semantic_data_extract import collect_artist_corpus
 
@@ -21,7 +22,9 @@ if __name__ == "__main__":
     chunks = collect_artist_corpus(SMALL_TEST_ARTISTS)
     print(f"\nCollected {len(chunks)} chunks across {len(SMALL_TEST_ARTISTS)} artists.")
 
-    output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "small_corpus_preview.txt")
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "corpus_previews", "small_test_previews")
+    output_path = os.path.join(output_dir, f"small_corpus_preview_{timestamp}.txt")
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(f"Collected {len(chunks)} chunks across {len(SMALL_TEST_ARTISTS)} artists.\n\n")
         for chunk in chunks:
