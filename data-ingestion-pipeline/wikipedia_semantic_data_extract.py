@@ -72,7 +72,9 @@ def fetch_section_titles_and_indexes(page_name: str) -> dict[str, int]:
             f"Wikipedia API request failed with status {response.status_code}: {response.text}"
         )
 
-    sections = response.json()["parse"]["sections"]
+    response_json = response.json()
+
+    sections = response_json["parse"]["sections"]
 
     return {section["line"]: int(section["index"]) for section in sections}
 
@@ -101,7 +103,8 @@ def collect_semantic_text_data(page_name: str, section_titles_and_indexes: dict[
     }
 
     response = requests.get("https://en.wikipedia.org/w/api.php", params=params, headers=headers)
-    html = response.json()["parse"]["text"]
+    response_json = response.json()
+    html = response_json["parse"]["text"]
     soup = BeautifulSoup(html, "html.parser")
 
     target_titles = set(section_titles_and_indexes.keys())
