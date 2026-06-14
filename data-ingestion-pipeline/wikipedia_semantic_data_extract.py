@@ -113,20 +113,28 @@ def collect_semantic_text_data(page_name: str, section_titles_and_indexes: dict[
     sections = []
     current_title = None
     current_paragraphs = []
+    intro_paragraphs = []
 
     for element in soup.find_all(["h2", "h3", "h4", "p"]):
         if element.name in HEADER_TAGS:
-            if current_title in target_titles and current_paragraphs:
+            if current_title is None and intro_paragraphs:
+                text = "\n\n".join(intro_paragraphs)
+                if text.strip():
+                    sections.append({"section_name": "Introduction", "text": text})
+            elif current_title in target_titles and current_paragraphs:
                 text = "\n\n".join(current_paragraphs)
                 if text.strip():
                     sections.append({"section_name": current_title, "text": text})
             headline = element.find("span", class_="mw-headline")
             current_title = headline.get_text(strip=True) if headline else element.get_text(strip=True)
             current_paragraphs = []
-        elif element.name == "p" and current_title in target_titles:
+        elif element.name == "p":
             text = element.get_text(" ", strip=True)
             if text:
-                current_paragraphs.append(text)
+                if current_title is None:
+                    intro_paragraphs.append(text)
+                elif current_title in target_titles:
+                    current_paragraphs.append(text)
 
     if current_title in target_titles and current_paragraphs:
         text = "\n\n".join(current_paragraphs)
