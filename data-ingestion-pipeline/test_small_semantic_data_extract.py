@@ -1,6 +1,9 @@
 import os
 from datetime import datetime
 
+import constants.wikipedia_api_settings as wikipedia_api_settings
+wikipedia_api_settings.THROTTLE_WIKIPEDIA_REQUESTS = False
+
 from wikipedia_semantic_data_extract import collect_artist_corpus
 
 if __name__ == "__main__":

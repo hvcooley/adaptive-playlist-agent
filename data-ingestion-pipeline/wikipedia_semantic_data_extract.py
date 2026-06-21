@@ -7,6 +7,8 @@ from datetime import datetime
 
 import constants.spotify_artist_names as spotify_artist_names
 import constants.wikipedia_page_titles_for_artists as wikipedia_page_titles_for_artists
+import constants.wikipedia_api_settings as wikipedia_api_settings
+from rate_limiter import RateLimiter
 
 
 WIKIPEDIA_API_URL = "https://en.wikipedia.org/w/api.php"
@@ -14,8 +16,12 @@ WIKIPEDIA_API_HEADERS = {
     "User-Agent": "adaptive-playlist-agent/1.0 (https://github.com/yourusername/adaptive-playlist-agent; contact: your-email@example.com)"
 }
 
+_wikipedia_rate_limiter = RateLimiter(wikipedia_api_settings.WIKIPEDIA_REQUEST_INTERVAL_SECONDS)
+
 
 def make_wikipedia_api_request(url: str, params: dict | None = None) -> requests.Response:
+    if wikipedia_api_settings.THROTTLE_WIKIPEDIA_REQUESTS:
+        _wikipedia_rate_limiter.wait()
     response = requests.get(url, params=params, headers=WIKIPEDIA_API_HEADERS)
     if response.status_code != 200:
         raise RuntimeError(
