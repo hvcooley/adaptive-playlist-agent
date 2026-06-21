@@ -1,6 +1,7 @@
 import os
 
 import requests
+import urllib.parse
 from bs4 import BeautifulSoup
 from datetime import datetime
 
@@ -13,7 +14,7 @@ def fetch_musical_vibe_section_labels(page_name: str) -> list[str]:
     url = (
         "https://en.wikipedia.org/w/api.php"
         f"?action=parse"
-        f"&page={requests.utils.quote(page_name)}"
+        f"&page={urllib.parse.quote(page_name)}"
         "&prop=sections"
         "&format=json"
     )
@@ -56,7 +57,7 @@ def fetch_section_titles_and_indexes(page_name: str) -> dict[str, int]:
     url = (
         "https://en.wikipedia.org/w/api.php"
         f"?action=parse"
-        f"&page={requests.utils.quote(page_name)}"
+        f"&page={urllib.parse.quote(page_name)}"
         "&prop=sections"
         "&format=json"
     )

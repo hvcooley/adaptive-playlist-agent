@@ -6,19 +6,19 @@ from wikipedia_semantic_data_extract import collect_artist_corpus
 if __name__ == "__main__":
     SMALL_TEST_ARTISTS = [
         "Blink-182",
-        
+        "Kings_of_Leon",
+        "Kendrick_Lamar",
+        "Taylor_Swift",
+        "The_Beatles",
+        "Daft_Punk",
+        "Treaty_Oak_Revival",
+        "Imagine_Dragons",
+        "Tame_Impala",
+        "Billie_Eilish",
+        "MGK",
+        "Yungblud"
     ]
-    # "Kings_of_Leon",
-    #     "Kendrick_Lamar",
-    #     "Taylor_Swift",
-    #     "The_Beatles",
-    #     "Daft_Punk",
-    #     "Treaty_Oak_Revival",
-    #     "Imagine_Dragons",
-    #     "Tame_Impala",
-    #     "Billie_Eilish",
-    #     "MGK",
-    #     "Yungblud"
+
 
     chunks = collect_artist_corpus(SMALL_TEST_ARTISTS)
     print(f"\nCollected {len(chunks)} chunks across {len(SMALL_TEST_ARTISTS)} artists.")
