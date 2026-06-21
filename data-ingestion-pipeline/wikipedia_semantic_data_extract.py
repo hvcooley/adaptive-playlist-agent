@@ -9,6 +9,21 @@ import constants.spotify_artist_names as spotify_artist_names
 import constants.wikipedia_page_titles_for_artists as wikipedia_page_titles_for_artists
 
 
+WIKIPEDIA_API_URL = "https://en.wikipedia.org/w/api.php"
+WIKIPEDIA_API_HEADERS = {
+    "User-Agent": "adaptive-playlist-agent/1.0 (https://github.com/yourusername/adaptive-playlist-agent; contact: your-email@example.com)"
+}
+
+
+def make_wikipedia_api_request(url: str, params: dict | None = None) -> requests.Response:
+    response = requests.get(url, params=params, headers=WIKIPEDIA_API_HEADERS)
+    if response.status_code != 200:
+        raise RuntimeError(
+            f"Wikipedia API request failed with status {response.status_code}: {response.text}"
+        )
+    return response
+
+
 def fetch_musical_vibe_section_labels(page_name: str) -> list[str]:
     '''
     Experimental Function. Do not use in data pipeline
@@ -54,27 +69,15 @@ def fetch_musical_vibe_section_labels(page_name: str) -> list[str]:
     return section_labels
 
 
-
 def fetch_section_titles_and_indexes(artist_page_name: str) -> dict[str, int]:
-    url = (
-        "https://en.wikipedia.org/w/api.php"
-        f"?action=parse"
-        f"&page={urllib.parse.quote(artist_page_name)}"
-        "&prop=sections"
-        "&format=json"
-    )
-
-    headers = {
-        "User-Agent": "adaptive-playlist-agent/1.0 (https://github.com/yourusername/adaptive-playlist-agent; contact: your-email@example.com)"
+    params = {
+        "action": "parse",
+        "page": artist_page_name,
+        "prop": "sections",
+        "format": "json",
     }
 
-    response = requests.get(url, headers=headers)
-
-    if response.status_code != 200:
-        raise RuntimeError(
-            f"Wikipedia API request failed with status {response.status_code}: {response.text}"
-        )
-
+    response = make_wikipedia_api_request(WIKIPEDIA_API_URL, params=params)
     response_json = response.json()
 
     sections = response_json["parse"]["sections"]
@@ -98,14 +101,10 @@ def collect_semantic_text_data(page_name: str, section_titles_and_indexes: dict[
         "page": page_name,
         "prop": "text",
         "formatversion": 2,
-        "format": "json"
+        "format": "json",
     }
 
-    headers = {
-        "User-Agent": "adaptive-playlist-agent/1.0 (https://github.com/yourusername/adaptive-playlist-agent; contact: your-email@example.com)"
-    }
-
-    response = requests.get("https://en.wikipedia.org/w/api.php", params=params, headers=headers)
+    response = make_wikipedia_api_request(WIKIPEDIA_API_URL, params=params)
     response_json = response.json()
     html = response_json["parse"]["text"]
     soup = BeautifulSoup(html, "html.parser")
