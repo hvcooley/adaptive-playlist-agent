@@ -1,1 +1,1 @@
-
+fetch_spotify_artists
