@@ -5,6 +5,8 @@ import urllib.parse
 from bs4 import BeautifulSoup
 from datetime import datetime
 
+import constants.spotify_artist_names as spotify_artist_names
+import constants.wikipedia_page_titles_for_artists as wikipedia_page_titles_for_artists
 
 
 def fetch_musical_vibe_section_labels(page_name: str) -> list[str]:
@@ -53,11 +55,11 @@ def fetch_musical_vibe_section_labels(page_name: str) -> list[str]:
 
 
 
-def fetch_section_titles_and_indexes(page_name: str) -> dict[str, int]:
+def fetch_section_titles_and_indexes(artist_page_name: str) -> dict[str, int]:
     url = (
         "https://en.wikipedia.org/w/api.php"
         f"?action=parse"
-        f"&page={urllib.parse.quote(page_name)}"
+        f"&page={urllib.parse.quote(artist_page_name)}"
         "&prop=sections"
         "&format=json"
     )
@@ -144,6 +146,20 @@ def collect_semantic_text_data(page_name: str, section_titles_and_indexes: dict[
 
     return sections
 
+def spotify_to_wikipedia_artist_name_mappings_edge_cases(spotify_artist_name_underscore_spacers: str) -> str:
+    """
+    Args:
+        spotify_artist_name_underscore_spacers: the name of the artist retrieved from spotify APIs
+    """
+    match spotify_artist_name_underscore_spacers:
+        case spotify_artist_names.MGK_SPOTIFY_NAME:
+            return wikipedia_page_titles_for_artists.MGK_WIKIPEDIA_PAGE_TITLE
+        case spotify_artist_names.YUNGBLUD_SPOTIFY_NAME:
+            return wikipedia_page_titles_for_artists.YUNGBLUD_WIKIPEDIA_PAGE_TITLE
+        #Default case keep the string the same
+        case _:
+            return spotify_artist_name_underscore_spacers
+
 def collect_artist_corpus(artists: list[str]) -> list[dict]:
     """
     Collects Wikipedia section text for a list of artists and returns Pinecone-ready chunks.
@@ -159,6 +175,7 @@ def collect_artist_corpus(artists: list[str]) -> list[dict]:
 
     for artist in artists:
         try:
+            artist = spotify_to_wikipedia_artist_name_mappings_edge_cases(artist)
             section_titles_and_indexes = fetch_section_titles_and_indexes(artist)
             sections = collect_semantic_text_data(artist, section_titles_and_indexes)
             for section in sections:
