@@ -10,5 +10,6 @@ class RateLimiter:
         elapsed = time.time() - self._last_request_time
         wait_time = self._min_interval - elapsed
         if wait_time > 0:
+            print(f"Delaying API call to avoid throttling for {wait_time} seconds.")
             time.sleep(wait_time)
         self._last_request_time = time.time()
