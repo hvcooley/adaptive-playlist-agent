@@ -1,0 +1,321 @@
+{
+    "timestamp": "2026-08-08T20:58:50.757135+00:00",
+    "model": "claude-sonnet-5",
+    "prompt_version": "v1",
+    "mode": "eval",
+    "query_id": "easy-1",
+    "query": "classic 90s grunge",
+    "predicted": [
+        "Nirvana",
+        "Pearl Jam",
+        "Soundgarden",
+        "Alice in Chains",
+        "Stone Temple Pilots",
+        "Smashing Pumpkins",
+        "Mudhoney",
+        "Screaming Trees",
+        "Hole",
+        "Temple of the Dog"
+    ],
+    "expected": [
+        "Nirvana",
+        "Pearl Jam",
+        "Soundgarden",
+        "Alice in Chains",
+        "Stone Temple Pilots"
+    ],
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1": 0.667,
+    "hits": [
+        "alice in chains",
+        "nirvana",
+        "pearl jam",
+        "soundgarden",
+        "stone temple pilots"
+    ],
+    "missed": []
+}
+{
+    "timestamp": "2026-08-08T20:58:54.013312+00:00",
+    "model": "claude-sonnet-5",
+    "prompt_version": "v1",
+    "mode": "eval",
+    "query_id": "easy-2",
+    "query": "upbeat disco from the 1970s",
+    "predicted": [
+        "Donna Summer",
+        "Bee Gees",
+        "Chic",
+        "KC and the Sunshine Band",
+        "Earth, Wind & Fire",
+        "Gloria Gaynor",
+        "Sister Sledge",
+        "The Trammps",
+        "Village People",
+        "ABBA"
+    ],
+    "expected": [
+        "Bee Gees",
+        "Donna Summer",
+        "Chic",
+        "ABBA",
+        "KC and the Sunshine Band"
+    ],
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1": 0.667,
+    "hits": [
+        "abba",
+        "bee gees",
+        "chic",
+        "donna summer",
+        "kc and the sunshine band"
+    ],
+    "missed": []
+}
+{
+    "timestamp": "2026-08-08T20:58:57.204600+00:00",
+    "model": "claude-sonnet-5",
+    "prompt_version": "v1",
+    "mode": "eval",
+    "query_id": "easy-3",
+    "query": "classic UK punk rock",
+    "predicted": [
+        "The Sex Pistols",
+        "The Clash",
+        "Buzzcocks",
+        "The Damned",
+        "Sham 69",
+        "The Stranglers",
+        "999",
+        "UK Subs",
+        "Cockney Rejects",
+        "Generation X"
+    ],
+    "expected": [
+        "Sex Pistols",
+        "The Clash",
+        "Buzzcocks",
+        "The Damned"
+    ],
+    "precision": 0.3,
+    "recall": 0.75,
+    "f1": 0.429,
+    "hits": [
+        "buzzcocks",
+        "the clash",
+        "the damned"
+    ],
+    "missed": [
+        "sex pistols"
+    ]
+}
+{
+    "timestamp": "2026-08-08T20:59:00.199605+00:00",
+    "model": "claude-sonnet-5",
+    "prompt_version": "v1",
+    "mode": "eval",
+    "query_id": "easy-4",
+    "query": "smooth 90s R&B",
+    "predicted": [
+        "Boyz II Men",
+        "Toni Braxton",
+        "TLC",
+        "Mary J. Blige",
+        "En Vogue",
+        "SWV",
+        "Brandy",
+        "Aaliyah",
+        "Usher",
+        "Jodeci"
+    ],
+    "expected": [
+        "Boyz II Men",
+        "TLC",
+        "Mary J. Blige",
+        "Usher",
+        "SWV"
+    ],
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1": 0.667,
+    "hits": [
+        "boyz ii men",
+        "mary j. blige",
+        "swv",
+        "tlc",
+        "usher"
+    ],
+    "missed": []
+}
+{
+    "timestamp": "2026-08-08T20:59:03.583170+00:00",
+    "model": "claude-sonnet-5",
+    "prompt_version": "v1",
+    "mode": "eval",
+    "query_id": "easy-5",
+    "query": "2020s country",
+    "predicted": [
+        "Morgan Wallen",
+        "Luke Combs",
+        "Zach Bryan",
+        "Lainey Wilson",
+        "Chris Stapleton",
+        "Cody Johnson",
+        "Jelly Roll",
+        "Kacey Musgraves",
+        "HARDY",
+        "Carly Pearce"
+    ],
+    "expected": [
+        "Morgan Wallen",
+        "Luke Bryan",
+        "Riley Green",
+        "Luke Combs",
+        "Ella Langley",
+        "Megan Moroney"
+    ],
+    "precision": 0.2,
+    "recall": 0.333,
+    "f1": 0.25,
+    "hits": [
+        "luke combs",
+        "morgan wallen"
+    ],
+    "missed": [
+        "ella langley",
+        "luke bryan",
+        "megan moroney",
+        "riley green"
+    ]
+}
+{
+    "timestamp": "2026-08-08T20:59:08.201126+00:00",
+    "model": "claude-sonnet-5",
+    "prompt_version": "v1",
+    "mode": "eval",
+    "query_id": "easy-6",
+    "query": "Rap 2000s and beyond",
+    "predicted": [
+        "Eminem",
+        "Jay-Z",
+        "50 Cent",
+        "Kanye West",
+        "Lil Wayne",
+        "Drake",
+        "Kendrick Lamar",
+        "Nas",
+        "OutKast",
+        "T.I."
+    ],
+    "expected": [
+        "Travis Scott",
+        "Lil Uzi Vert",
+        "Kanye West",
+        "Eminem",
+        "Future",
+        "Drake"
+    ],
+    "precision": 0.3,
+    "recall": 0.5,
+    "f1": 0.375,
+    "hits": [
+        "drake",
+        "eminem",
+        "kanye west"
+    ],
+    "missed": [
+        "future",
+        "lil uzi vert",
+        "travis scott"
+    ]
+}
+{
+    "timestamp": "2026-08-08T20:59:11.139405+00:00",
+    "model": "claude-sonnet-5",
+    "prompt_version": "v1",
+    "mode": "eval",
+    "query_id": "easy-7",
+    "query": "2010s (Golden Age) EDM",
+    "predicted": [
+        "Avicii",
+        "Swedish House Mafia",
+        "Calvin Harris",
+        "David Guetta",
+        "Zedd",
+        "Martin Garrix",
+        "Skrillex",
+        "Deadmau5",
+        "Ti\u00ebsto",
+        "Hardwell"
+    ],
+    "expected": [
+        "Avicci",
+        "Calvin Harris",
+        "David Guetta",
+        "Zedd",
+        "Martin Garrix"
+    ],
+    "precision": 0.4,
+    "recall": 0.8,
+    "f1": 0.533,
+    "hits": [
+        "calvin harris",
+        "david guetta",
+        "martin garrix",
+        "zedd"
+    ],
+    "missed": [
+        "avicci"
+    ]
+}
+{
+    "timestamp": "2026-08-08T20:59:13.474345+00:00",
+    "model": "claude-sonnet-5",
+    "prompt_version": "v1",
+    "mode": "eval",
+    "query_id": "easy-8",
+    "query": "Alt rock early 2000s",
+    "predicted": [
+        "Linkin Park",
+        "The Strokes",
+        "Incubus",
+        "Foo Fighters",
+        "Coldplay",
+        "Jimmy Eat World",
+        "Weezer",
+        "Third Eye Blind",
+        "Stone Temple Pilots",
+        "Deftones"
+    ],
+    "expected": [
+        "The Killers",
+        "Kings Of Leon",
+        "Jimmy Eat World",
+        "Red Hot Chili Peppers",
+        "Green Day"
+    ],
+    "precision": 0.1,
+    "recall": 0.2,
+    "f1": 0.133,
+    "hits": [
+        "jimmy eat world"
+    ],
+    "missed": [
+        "green day",
+        "kings of leon",
+        "red hot chili peppers",
+        "the killers"
+    ]
+}
+{
+    "timestamp": "2026-08-08T20:59:13.474980+00:00",
+    "model": "claude-sonnet-5",
+    "prompt_version": "v1",
+    "mode": "eval_aggregate",
+    "precision": 0.35,
+    "recall": 0.698,
+    "f1": 0.465,
+    "num_queries": 8
+}
