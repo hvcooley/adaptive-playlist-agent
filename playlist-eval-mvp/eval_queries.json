@@ -1,0 +1,52 @@
+[
+  {
+    "id": "easy-1",
+    "query": "classic 90s grunge",
+    "expected_artists": ["Nirvana", "Pearl Jam", "Soundgarden", "Alice in Chains", "Stone Temple Pilots"]
+  },
+  {
+    "id": "easy-2",
+    "query": "upbeat disco from the 1970s",
+    "expected_artists": ["Bee Gees", "Donna Summer", "Chic", "ABBA", "KC and the Sunshine Band"]
+  },
+  {
+    "id": "easy-3",
+    "query": "classic UK punk rock",
+    "expected_artists": ["Sex Pistols", "The Clash", "Buzzcocks", "The Damned"]
+  },
+  {
+    "id": "easy-4",
+    "query": "smooth 90s R&B",
+    "expected_artists": ["Boyz II Men", "TLC", "Mary J. Blige", "Usher", "SWV"]
+  },
+  {
+    "id": "easy-5",
+    "query": "2020s country",
+    "expected_artists": ["Morgan Wallen", "Lainey Wilson", "Riley Green", "Luke Combs", "Ella Langley", "Megan Moroney", "Zach Bryan"]
+  },
+  {
+    "id": "easy-6",
+    "query": "Early 2000s Rap",
+    "expected_artists": ["Kanye West", "Eminem", "50 Cent", "Drake", "Lil Wayne", "Kendrick Lamar"]
+  },
+  {
+    "id": "easy-6a",
+    "query": "2010s Rap",
+    "expected_artists": ["Travis Scott", "Lil Uzi Vert", "Nav", "Playboi Carti", "Future"]
+  },
+  {
+    "id": "easy-7",
+    "query": "2010s (Golden Age) EDM",
+    "expected_artists": ["Avicii", "Calvin Harris", "David Guetta", "Zedd", "Martin Garrix"]
+  },
+  {
+    "id": "easy-8",
+    "query": "Alt rock late 90s",
+    "expected_artists": ["The Killers", "Kings Of Leon", "Red Hot Chili Peppers", "Green Day"]
+  },
+  {
+    "id": "easy-9",
+    "query": "Alt rock early 2000s",
+    "expected_artists": ["Jimmy Eat World", "Linkin Park", "The Strokes", "Foo Fighters", "Weezer", "Third Eye Blind", "Deftones"]
+  }
+]

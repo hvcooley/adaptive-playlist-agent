@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Playlist Eval: run eval set",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/playlist-eval-mvp/main.py",
+            "args": ["--eval"],
+            "cwd": "${workspaceFolder}/playlist-eval-mvp",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Playlist Eval: interactive query",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/playlist-eval-mvp/main.py",
+            "args": [],
+            "cwd": "${workspaceFolder}/playlist-eval-mvp",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "console": "integratedTerminal"
+        }
+    ]
+}

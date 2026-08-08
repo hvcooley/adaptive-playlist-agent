@@ -1,0 +1,891 @@
+
+(.venv) harrisoncooley@MacBookPro adaptive-playlist-agent % /Users/harrisoncooley/Desktop/Programming_Fun/adaptive-playlist-agent/.venv/bin/p
+ython /Users/harrisoncooley/Desktop/Programming_Fun/adaptive-playlist-agent/data-ingestion-pipeline/wikipedia_semantic_data_extract.py
+Fetching: 'pop'
+  +100 new  (total: 100)
+Fetching: 'rap'
+  +31 new  (total: 131)
+Fetching: 'pop rap'
+  +92 new  (total: 223)
+Fetching: 'trap'
+  +2 new  (total: 225)
+Fetching: 'rock'
+  +94 new  (total: 319)
+Fetching: 'modern rock'
+  +0 new  (total: 319)
+Fetching: 'alternative rock'
+  +0 new  (total: 319)
+Fetching: 'modern country rock'
+  +0 new  (total: 319)
+Fetching: 'folk rock'
+  +98 new  (total: 417)
+Fetching: 'modern alternative rock'
+  +0 new  (total: 417)
+Fetching: 'country rock'
+  +87 new  (total: 504)
+Fetching: 'grunge'
+  +0 new  (total: 504)
+Fetching: 'edm'
+  +0 new  (total: 504)
+Fetching: 'country'
+  +71 new  (total: 575)
+Fetching: 'contemporary country'
+  +0 new  (total: 575)
+Fetching: 'modern country pop'
+  +0 new  (total: 575)
+Fetching: 'red dirt'
+  +0 new  (total: 575)
+Fetching: 'indie'
+  +62 new  (total: 637)
+Fetching: 'metal'
+  +79 new  (total: 716)
+Fetching: 'jazz'
+  +98 new  (total: 814)
+[OK] ラプラス・ダークネス — 0 sections
+[SKIP] xavierslk — 'parse'
+[SKIP] wifiskeleton — invalid literal for int() with base 10: ''
+[SKIP] treamiboii — 'parse'
+[SKIP] thuggpint — 'parse'
+[OK] sombr — 4 sections
+[OK] rapture — 21 sections
+[OK] rainbolt — 0 sections
+[OK] MGK — 12 sections
+[SKIP] leacim_said — 'parse'
+[SKIP] lavi_kou — 'parse'
+[OK] kuala — 2 sections
+[OK] gnash — 1 sections
+[OK] girl_in_red — 0 sections
+[OK] dublon — 0 sections
+[OK] d4vd — 9 sections
+[OK] blink-182 — 14 sections
+[OK] berlioz — 0 sections
+[OK] benny_blanco — 0 sections
+[OK] beabadoobee — 6 sections
+[SKIP] baby_rap_RD — 'parse'
+[OK] ZillaKami — 4 sections
+[OK] Zero_7 — 2 sections
+[SKIP] Zed_Beton_Bled — 'parse'
+[OK] Zara_Larsson — 8 sections
+[OK] Zakk_Wylde — 14 sections
+[OK] Zach_Top — 3 sections
+[OK] Zach_Bryan — 4 sections
+[OK] Zac_Brown_Band — 9 sections
+[SKIP] ZICO — 'parse'
+[OK] Yusuf_/_Cat_Stevens — 0 sections
+[OK] Yussef_Dayes — 5 sections
+[OK] Young_Stoner_Life — 0 sections
+[OK] Yelawolf — 7 sections
+[OK] Yungblud — 8 sections
+[OK] Y2K — 1 sections
+[OK] Wyatt_Flores — 4 sections
+[SKIP] Wind_Walkers — 'parse'
+[OK] Willie_Nelson — 16 sections
+[OK] Wilderado — 3 sections
+[OK] Wilco — 3 sections
+[OK] Whitesnake — 7 sections
+[OK] Whiskey_Myers — 3 sections
+[SKIP] Wesley_Voox — 'parse'
+[OK] Weezer — 19 sections
+[OK] Waylon_Wyatt — 6 sections
+[OK] Waylon_Jennings — 15 sections
+[OK] Warren_Zeiders — 3 sections
+[OK] Wage_War — 4 sections
+[SKIP] WWE — invalid literal for int() with base 10: 'T-1'
+[SKIP] Vwillz — 'parse'
+[OK] Vincent_Mason — 5 sections
+[SKIP] VieiraZN — 'parse'
+[OK] Vance_Joy — 5 sections
+[OK] Van_Morrison — 30 sections
+[OK] Van_Halen — 14 sections
+[OK] Upchurch — 4 sections
+[OK] Uncle_Kracker — 3 sections
+[OK] U2 — 11 sections
+[OK] Type_O_Negative — 8 sections
+[OK] Tyler_Childers — 6 sections
+[OK] Tyler_Braden — 3 sections
+[OK] Tyga — 7 sections
+[OK] Ty_Myers — 4 sections
+[OK] Twenty_One_Pilots — 8 sections
+[OK] Turnpike_Troubadours — 4 sections
+[OK] Tulus — 0 sections
+[OK] Tucker_Wetmore — 3 sections
+[OK] Treaty_Oak_Revival — 3 sections
+[OK] Tream — 5 sections
+[OK] Travis_Tritt — 10 sections
+[OK] Travis_Denning — 3 sections
+[OK] Travis_Barker — 11 sections
+[OK] Traveling_Wilburys — 9 sections
+[OK] Trapt — 6 sections
+[OK] Train — 42 sections
+[OK] Tracy_Lawrence — 7 sections
+[OK] Tracy_Chapman — 6 sections
+[OK] Trace_Adkins — 12 sections
+[OK] Tony_Bennett — 16 sections
+[OK] Tom_Petty_and_the_Heartbreakers — 9 sections
+[OK] Tom_Petty — 13 sections
+[OK] Tom_Odell — 8 sections
+[OK] Tom_Misch — 2 sections
+[OK] Toby_Keith — 16 sections
+[OK] Tito_Double_P — 2 sections
+[OK] Timbaland — 9 sections
+[OK] Tim_McGraw — 9 sections
+[OK] Three_Days_Grace — 7 sections
+[OK] Thomas_Rhett — 6 sections
+[OK] Third_Eye_Blind — 5 sections
+[OK] Thievery_Corporation — 6 sections
+[SKIP] Thierby_off — 'parse'
+[OK] Theory_of_a_Deadman — 4 sections
+[SKIP] The_Sways — 'parse'
+[OK] The_Strokes — 3 sections
+[OK] The_Smiths — 10 sections
+[OK] The_Smashing_Pumpkins — 8 sections
+[OK] The_Script — 4 sections
+[OK] The_Rolling_Stones — 16 sections
+[OK] The_Red_Clay_Strays — 4 sections
+[OK] The_Police — 9 sections
+[OK] The_Plot_In_You — 0 sections
+[OK] The_Neighbourhood — 3 sections
+[OK] The_Marías — 3 sections
+[OK] The_Marshall_Tucker_Band — 8 sections
+[OK] The_Mamas_&_The_Papas — 0 sections
+[OK] The_Lumineers — 6 sections
+[OK] The_Lovin'_Spoonful — 16 sections
+[OK] The_Lacs — 3 sections
+[OK] The_Killers — 10 sections
+[OK] The_Ink_Spots — 16 sections
+[SKIP] The_Head_And_The_Heart — 'parse'
+[OK] The_Grass_Roots — 10 sections
+[OK] The_Goo_Goo_Dolls — 0 sections
+[OK] The_Georgia_Satellites — 5 sections
+[OK] The_Doobie_Brothers — 10 sections
+[OK] The_Dave_Brubeck_Quartet — 0 sections
+[OK] The_Cure — 10 sections
+[OK] The_Cranberries — 9 sections
+[OK] The_Cinematic_Orchestra — 4 sections
+[OK] The_Chicks — 6 sections
+[OK] The_Charlie_Daniels_Band — 0 sections
+[OK] The_Chainsmokers — 7 sections
+[OK] The_Byrds — 13 sections
+[OK] The_Bottle_Rockets — 8 sections
+[OK] The_Beatles — 25 sections
+[OK] The_Beach_Boys — 22 sections
+[OK] The_Band — 12 sections
+[OK] The_1975 — 5 sections
+[OK] Tenxi — 0 sections
+[OK] Temper_City — 0 sections
+[OK] Teddy_Swims — 4 sections
+[OK] Tears_For_Fears — 0 sections
+[OK] Taylor_Swift — 15 sections
+[OK] Tate_McRae — 8 sections
+[OK] Tame_Impala — 6 sections
+[OK] Talking_Heads — 7 sections
+[OK] TV_Girl — 6 sections
+[OK] TUL8TE — 0 sections
+[OK] TOTO — 0 sections
+[OK] TOOL — 0 sections
+[SKIP] TOMORROW_X_TOGETHER — 'parse'
+[SKIP] TBig21 — 'parse'
+[OK] T-Pain — 10 sections
+[OK] Sérgio_Mendes — 6 sections
+[OK] System_Of_A_Down — 0 sections
+[OK] Susto — 4 sections
+[OK] Sugar_Ray — 3 sections
+[OK] Sueco — 1 sections
+[OK] Sublime — 1 sections
+[OK] Sturgill_Simpson — 7 sections
+[OK] Stray_Kids — 10 sections
+[OK] Stormy — 1 sections
+[OK] Stone_Temple_Pilots — 12 sections
+[OK] Stone_Sour — 7 sections
+[OK] Stick_Figure — 7 sections
+[OK] Steve_Lacy — 5 sections
+[SKIP] Sterling_Elza — 'parse'
+[OK] Stephen_Wilson_Jr. — 5 sections
+[OK] Stephen_Stills — 19 sections
+[OK] Steely_Dan — 12 sections
+[OK] Stealers_Wheel — 2 sections
+[SKIP] State_of_Mine — 'parse'
+[OK] Stan_Getz — 8 sections
+[OK] Staind — 4 sections
+[OK] Stacey_Kent — 4 sections
+[SKIP] Squad_Sui — 'parse'
+[OK] Spiritbox — 9 sections
+[SKIP] Sparkbird — 'parse'
+[SKIP] Soñaflow_Music — 'parse'
+[OK] Soundgarden — 8 sections
+[OK] Soulja_Boy — 25 sections
+[SKIP] Sons_of_Legion — 'parse'
+[OK] Slipknot — 0 sections
+[OK] Sleep_Token — 13 sections
+[OK] Sleep_Theory — 3 sections
+[OK] Slayyyter — 7 sections
+[OK] Slayer — 10 sections
+[OK] Skillet — 0 sections
+[OK] Skid_Row — 0 sections
+[OK] Ski_Aggu — 4 sections
+[OK] Simon_&_Garfunkel — 11 sections
+[OK] Sia — 13 sections
+[OK] Shinedown — 5 sections
+[OK] Shawn_Mendes — 7 sections
+[OK] Shania_Twain — 13 sections
+[OK] Shakira — 14 sections
+[OK] Shaboozey — 6 sections
+[OK] Sevendust — 4 sections
+[OK] Selena_Gomez — 19 sections
+[OK] Seether — 4 sections
+[SKIP] Scott_Bradlee's_Postmodern_Jukebox — 'parse'
+[OK] Scorpions — 0 sections
+[OK] Sarah_Stiles — 4 sections
+[OK] Sara_Bareilles — 7 sections
+[OK] Samuel_T._Herring — 3 sections
+[OK] Sammy_Rae_&_The_Friends — 10 sections
+[SKIP] Sammy_Laz — 'parse'
+[OK] Sam_Smith — 6 sections
+[OK] Sam_Hunt — 7 sections
+[OK] Sam_Fender — 13 sections
+[OK] Sam_Barber — 0 sections
+[OK] Saliva — 15 sections
+[OK] Sadie_Jean — 3 sections
+[OK] Sabrina_Carpenter — 11 sections
+[OK] Sabaton — 3 sections
+[OK] SUGA — 0 sections
+[SKIP] STELLA_LEFTY — 'parse'
+[SKIP] STARSET — 'parse'
+[SKIP] SIENNA_SPIRO — 'parse'
+[OK] Ryan_Lewis — 5 sections
+[SKIP] Ryan_Jesse — 'parse'
+[OK] Ryan_Hurd — 3 sections
+[OK] Russell_Dickerson — 5 sections
+[OK] Rubén_Blades — 7 sections
+[OK] Royel_Otis — 9 sections
+[OK] Rodríguez — 0 sections
+[SKIP] RockyTooCocky — 'parse'
+[OK] Rocky_Votolato — 2 sections
+[OK] Rocky_Roberts — 1 sections
+[SKIP] Rocky_Raja — 'parse'
+[SKIP] Rocky_Luciano — 'parse'
+[SKIP] Rockiye — 'parse'
+[OK] Rocking_Rebel — 0 sections
+[OK] Rock_Plaza_Central — 2 sections
+[OK] Rocco — 1 sections
+[OK] Robert_Plant — 16 sections
+[OK] Robbie_Williams — 22 sections
+[OK] Rob_Zombie — 10 sections
+[SKIP] Rndr — 'parse'
+[OK] Riley_Green — 6 sections
+[OK] Rihanna — 14 sections
+[OK] Rex_Orange_County — 5 sections
+[OK] Responsa — 7 sections
+[SKIP] RequestieBoy — 'parse'
+[OK] Reneé_Rapp — 6 sections
+[OK] Regina_Spektor — 14 sections
+[OK] Redferrin — 2 sections
+[OK] Red_Hot_Chili_Peppers — 13 sections
+[OK] Ravyn_Lenae — 4 sections
+[OK] Rascal_Flatts — 11 sections
+[OK] Rapture_Ruckus — 6 sections
+[OK] Raptor — 2 sections
+[SKIP] Rapital — 'parse'
+[SKIP] Raphiel_Shannon — 'parse'
+[OK] Raphaël — 0 sections
+[SKIP] Rapeter — 'parse'
+[OK] Rapallo — 9 sections
+[SKIP] Rap_Rahul — 'parse'
+[SKIP] Rap_By_Kd — 'parse'
+[OK] Randy_Travis — 13 sections
+[SKIP] Randy_Rap — 'parse'
+[OK] Randy_Newman — 9 sections
+[OK] Randy_Houser — 5 sections
+[OK] Rammstein — 11 sections
+[OK] Ramirez — 1 sections
+[OK] Rainbow_Kitten_Surprise — 2 sections
+[OK] Rage_Against_The_Machine — 0 sections
+[OK] Radiohead — 16 sections
+[OK] ROLE_MODEL — 0 sections
+[SKIP] ROCK_SQUAD — 'parse'
+[OK] RM — 1 sections
+[SKIP] RAPH4EL — 'parse'
+[SKIP] RAP_VIỆT — 'parse'
+[OK] R.E.M. — 14 sections
+[OK] Quincy_Jones — 15 sections
+[OK] Queen — 1 sections
+[OK] Quantic — 1 sections
+[SKIP] Prince_Geezy — 'parse'
+[OK] Prince — 27 sections
+[OK] Pouya — 4 sections
+[OK] Pomplamoose — 4 sections
+[OK] Poison — 13 sections
+[OK] Pitbull — 0 sections
+[OK] PinkPantheress — 8 sections
+[OK] Pink_Floyd — 22 sections
+[OK] Phoebe_Bridgers — 8 sections
+[SKIP] Phix — 'parse'
+[OK] Phish — 9 sections
+[OK] Phillip_Phillips — 7 sections
+[OK] Phil_Collins — 18 sections
+[OK] Phantogram — 1 sections
+[OK] Peter,_Paul_and_Mary — 4 sections
+[OK] Peso_Pluma — 7 sections
+[OK] Peggy_Lee — 11 sections
+[OK] Pearl_Jam — 6 sections
+[OK] Paul_Simon — 12 sections
+[OK] Paul_McCartney — 31 sections
+[OK] Patrick_Watson — 0 sections
+[OK] Patrice_Rushen — 5 sections
+[OK] Parker_McCollum — 6 sections
+[OK] Paramore — 8 sections
+[OK] Papa_Roach — 7 sections
+[OK] Pantera — 10 sections
+[OK] Panic!_At_The_Disco — 0 sections
+[OK] Paloma_Faith — 8 sections
+[OK] PSY — 0 sections
+[OK] PRESIDENT — 0 sections
+[OK] PJ_Harvey — 7 sections
+[OK] Ozzy_Osbourne — 21 sections
+[OK] Our_Last_Night — 6 sections
+[OK] Oscar_Peterson_Trio — 0 sections
+[OK] OneRepublic — 9 sections
+[OK] One_Direction — 13 sections
+[OK] Omar_Apollo — 5 sections
+[OK] Olivia_Rodrigo — 10 sections
+[OK] Olivia_Dean — 6 sections
+[OK] Olive_Jones — 4 sections
+[OK] Ole_60 — 4 sections
+[OK] Old_Dominion — 1 sections
+[OK] Oh_Wonder — 4 sections
+[OK] Of_Monsters_and_Men — 4 sections
+[OK] Odetari — 3 sections
+[OK] Oasis — 8 sections
+[SKIP] OR3O — 'parse'
+[OK] Nova_Rockafeller — 7 sections
+[OK] Norah_Jones — 6 sections
+[OK] Noah_Kahan — 3 sections
+[OK] Nitty_Gritty_Dirt_Band — 9 sections
+[OK] Nirvana — 9 sections
+[OK] Nine_Inch_Nails — 9 sections
+[OK] Nina_Simone — 20 sections
+[OK] Nightmares_On_Wax — 0 sections
+[OK] Nicki_Minaj — 17 sections
+[OK] Nickelback — 10 sections
+[OK] Nick_Cave_&_The_Bad_Seeds — 0 sections
+[SKIP] Nic_D — 'parse'
+[OK] Neton_Vega — 0 sections
+[SKIP] Neovaldo_Paulo — 'parse'
+[OK] Nelly — 13 sections
+[OK] Neil_Young — 37 sections
+[OK] Neil_Diamond — 11 sections
+[SKIP] Neckwav — 'parse'
+[OK] Ne-Yo — 12 sections
+[OK] Nathaniel_Rateliff_&_The_Night_Sweats — 0 sections
+[OK] Natanael_Cano — 5 sections
+[OK] Natalie_Merchant — 5 sections
+[OK] Natalie_Cole — 10 sections
+[OK] Nat_King_Cole — 16 sections
+[OK] NF — 1 sections
+[OK] NEEDTOBREATHE — 0 sections
+[OK] Mötley_Crüe — 14 sections
+[OK] Myles_Smith — 3 sections
+[OK] My_Morning_Jacket — 5 sections
+[OK] My_Chemical_Romance — 11 sections
+[SKIP] Muzzul_CJ — 'parse'
+[OK] Muse — 0 sections
+[SKIP] Muscadine_Bloodline — 'parse'
+[OK] Mumford_&_Sons — 8 sections
+[OK] Mt._Joy — 0 sections
+[OK] Motionless_In_White — 0 sections
+[OK] Morray — 5 sections
+[OK] Mori_Calliope — 4 sections
+[OK] Morgan_Wallen — 7 sections
+[OK] Moonshine_Bandits — 2 sections
+[OK] Monica_Barbaro — 5 sections
+[OK] Mon_Laferte — 5 sections
+[OK] Mole — 1 sections
+[OK] Mitski — 8 sections
+[OK] Miranda_Lambert — 8 sections
+[OK] Miley_Cyrus — 17 sections
+[OK] Miles_Davis — 16 sections
+[OK] Midland — 1 sections
+[OK] Michael_Ray — 1 sections
+[OK] Michael_Bublé — 6 sections
+[OK] Metallica — 11 sections
+[OK] Melody_Gardot — 7 sections
+[OK] Melanie_Martinez — 10 sections
+[OK] Meghan_Trainor — 9 sections
+[OK] Megan_Moroney — 4 sections
+[OK] Megadeth — 10 sections
+[SKIP] Mc_Ruth_Clark — 'parse'
+[OK] Mazzy_Star — 7 sections
+[OK] Max_McNown — 4 sections
+[OK] Matt_Maeson — 5 sections
+[OK] Matchbox_Twenty — 12 sections
+[OK] Mat_Kearney — 6 sections
+[OK] Masayoshi_Takanaka — 6 sections
+[OK] Maroon_5 — 7 sections
+[OK] Marino — 1 sections
+[OK] Marilyn_Manson — 22 sections
+[OK] Maren_Morris — 14 sections
+[OK] Maná — 7 sections
+[OK] Manchester_Orchestra — 6 sections
+[OK] Malcolm_Todd — 4 sections
+[OK] Maggie_Rogers — 10 sections
+[OK] Madonna — 9 sections
+[OK] Madeleine_Peyroux — 6 sections
+[OK] Macklemore_&_Ryan_Lewis — 2 sections
+[OK] Macklemore_&_Ryan_Lewis — 2 sections
+[OK] Macklemore — 7 sections
+[OK] Mac_DeMarco — 8 sections
+[OK] MGMT — 6 sections
+[SKIP] MC_RAP_PRODUCIENDO — 'parse'
+[SKIP] Léo_&_Raphael — 'parse'
+[OK] Lynyrd_Skynyrd — 12 sections
+[OK] Luke_Combs — 5 sections
+[OK] Luke_Bryan — 11 sections
+[OK] Luis_R_Conriquez — 0 sections
+[OK] Louis_Prima — 13 sections
+[OK] Louis_Armstrong — 36 sections
+[OK] Lorde — 8 sections
+[OK] Lord_Huron — 3 sections
+[OK] Loggins_&_Messina — 0 sections
+[OK] Lobo — 2 sections
+[OK] Lizzy_McAlpine — 5 sections
+[OK] Linkin_Park — 9 sections
+[OK] Linda_Ronstadt — 25 sections
+[OK] Limp_Bizkit — 14 sections
+[OK] Lil'_Kim — 13 sections
+[OK] Lil_Nas_X — 11 sections
+[SKIP] Lil_Jhonie — 'parse'
+[OK] Lil_Dicky — 5 sections
+[SKIP] Lil_Darkie — 'parse'
+[OK] Leslie_Odom_Jr. — 7 sections
+[OK] Lee_Brice — 5 sections
+[OK] Led_Zeppelin — 15 sections
+[OK] Laufey — 1 sections
+[SKIP] Landon_Cube — 'parse'
+[OK] Lana_Del_Rey — 15 sections
+[OK] Lamb_of_God — 8 sections
+[OK] Lakeview — 1 sections
+[OK] Lainey_Wilson — 10 sections
+[OK] Lady_Gaga — 16 sections
+[OK] Lady_A — 8 sections
+[OK] LSD — 56 sections
+[SKIP] LNGSHOT — 'parse'
+[OK] LE_SSERAFIM — 0 sections
+[OK] Kyle_Raphael — 4 sections
+[SKIP] Korn — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] KonSlayer_the_Genre-Walker — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Koe_Wetzel — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Kings_of_Leon — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Kim_Petras — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Killswitch_Engage — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Kiki_Rockwell — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Kid_Rock — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Khalid — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Keyshia_Cole — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Kesha — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Kenny_G — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Kenny_Chesney — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Kelsea_Ballerini — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Keith_Urban — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Katy_Perry — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Karpamal — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Kane_Brown — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Kameron_Marlowe — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Kali_Uchis — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Kahitna — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Kacey_Musgraves — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] KYLE — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] KPop_Demon_Hunters_Cast — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] KISS — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] KATSEYE — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] KALEO — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Justin_Timberlake — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Justin_Hurwitz — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Justin_Bieber — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Junior_H — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Jungle — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Judas_Priest — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] João_Gilberto — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Journey — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Josh_Garrels — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Jordan_Davis — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Jonathan_Michael_Fleming — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Jon_Pardi — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Jon_Batiste — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Joji — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] Johnny_Cash — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] John_Mayer — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] John_Mark_Pantana — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] John_Hiatt — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] John_Fogerty — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[SKIP] John_Denver — Wikipedia API request failed with status 429: You are making too many requests to the API.
+Please follow the best practices at <https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits>.
+If you are unsure how to get the access you need, contact <bot-traffic@wikimedia.org>.
+[OK] John_Coltrane — 23 sections
+[OK] Joan_Baez — 26 sections
+[OK] Jimmy_Buffett — 31 sections
+[OK] Jim_Croce — 7 sections
+[OK] Jessie_Murph — 3 sections
+[SKIP] Jess_Ray — 'parse'
+[SKIP] Jervis_Campbell — 'parse'
+[OK] Jerry_Reed — 10 sections
+[OK] Jerry_Garcia — 15 sections
+[OK] Jeris_Johnson — 2 sections
+[OK] Jelly_Roll — 0 sections
+[OK] Jeff_Buckley — 12 sections
+[SKIP] Jeferson_Devon — 'parse'
+[SKIP] Jazzy_Coffee — 'parse'
+[SKIP] Jay_Webb — 'parse'
+[OK] Jax — 1 sections
+[OK] Jason_Mraz — 9 sections
+[OK] Jason_Aldean — 8 sections
+[OK] Jamiroquai — 7 sections
+[OK] James_Taylor — 10 sections
+[OK] Jacob_Collier — 5 sections
+[OK] Jackson_Dean — 2 sections
+[OK] Jackson_Browne — 15 sections
+[OK] Jack_Johnson — 25 sections
+[OK] JENNIE — 0 sections
+[SKIP] JACKBOYS — 'parse'
+[OK] J.A.C._Redford — 0 sections
+[SKIP] J_Arias — 'parse'
+[OK] Iron_West — 2 sections
+[OK] Iron_Maiden — 17 sections
+[OK] Incubus — 3 sections
+[OK] In_This_Moment — 5 sections
+[OK] Imogen_Heap — 11 sections
+[OK] Imagine_Dragons — 6 sections
+[OK] Iggy_Azalea — 14 sections
+[OK] Ice_Nine_Kills — 4 sections
+[OK] I_Prevail — 5 sections
+[OK] Hudson_Westbrook — 4 sections
+[OK] Hozier — 11 sections
+[OK] Hotel_Ugly — 2 sections
+[OK] Hoodie_Allen — 4 sections
+[OK] Hoobastank — 4 sections
+[OK] Hollywood_Undead — 4 sections
+[OK] Hiss_Golden_Messenger — 3 sections
+[OK] Herbie_Hancock — 8 sections
+[SKIP] Hayden_Coffman — 'parse'
+[OK] Harry_Styles — 13 sections
+[OK] Harry_Chapin — 10 sections
+[OK] Hank_Williams,_Jr. — 0 sections
+[OK] Halsey — 1 sections
+[SKIP] HIXTAPE — 'parse'
+[OK] HIM — 0 sections
+[SKIP] HARDY — 'parse'
+[OK] Gym_Class_Heroes — 6 sections
+[OK] Guns_N'_Roses — 17 sections
+[OK] Grover_Washington,_Jr. — 0 sections
+[OK] Gregory_Alan_Isakov — 2 sections
+[OK] Green_Day — 17 sections
+[OK] Grateful_Dead — 21 sections
+[OK] Gracie_Abrams — 6 sections
+[OK] Gorillaz — 3 sections
+[OK] Gordon_Lightfoot — 11 sections
+[OK] Goose — 9 sections
+[OK] GoonRock — 8 sections
+[OK] Good_Kid — 4 sections
+[OK] Gojira — 1 sections
+[OK] Godsmack — 5 sections
+[OK] Glenn_Miller — 23 sections
+[OK] Glass_Animals — 2 sections
+[OK] Gigi_Perez — 3 sections
+[OK] Gianluca_Grignani — 2 sections
+[OK] Ghostemane — 4 sections
+[OK] Ghost — 37 sections
+[OK] George_Strait — 17 sections
+[OK] George_Benson — 6 sections
+[SKIP] Gentle_Jazz_Piano — 'parse'
+[OK] Genki_Rockets — 6 sections
+[OK] Gene_Rockwell — 3 sections
+[OK] Gavin_Adcock — 4 sections
+[SKIP] Gannon_Fremin_&_CCREV — 'parse'
+[OK] Gaby_Moreno — 8 sections
+[SKIP] GabrielCaminha — 'parse'
+[OK] G-Eazy — 7 sections
+[SKIP] G-DRAGON — 'parse'
+[OK] Fuerza_Regida — 3 sections
+[OK] From_Ashes_to_New — 4 sections
+[OK] French_Montana — 21 sections
+[OK] Frank_Sinatra — 24 sections
+[SKIP] Fox_N'_Vead — 'parse'
+[OK] Foster_The_People — 0 sections
+[OK] Forrest_Frank — 6 sections
+[OK] Foreigner — 1 sections
+[OK] Foo_Fighters — 7 sections
+[OK] Florida_Georgia_Line — 6 sections
+[OK] Flo_Rida — 4 sections
+[SKIP] Fleetwood_Mac — invalid literal for int() with base 10: 'T-1'
+[OK] Five_Finger_Death_Punch — 6 sections
+[OK] Fetty_Wap — 7 sections
+[OK] Faye_Webster — 4 sections
+[OK] Falling_In_Reverse — 0 sections
+[OK] Fall_Out_Boy — 7 sections
+[SKIP] FLIPPER — 'parse'
+[OK] F1_The_Album — 0 sections
+[OK] Evanescence — 7 sections
+[OK] Ethel_Cain — 10 sections
+[OK] Eric_Church — 6 sections
+[OK] Emmylou_Harris — 15 sections
+[OK] Elvis_Presley — 25 sections
+[OK] Elton_John — 17 sections
+[OK] Ellie_Goulding — 19 sections
+[OK] Ella_Langley — 7 sections
+[OK] Ella_Fitzgerald — 12 sections
+[OK] Electric_Light_Orchestra — 9 sections
+[SKIP] El_TuertoJoints — 'parse'
+[SKIP] El_De_Las_R's — 'parse'
+[OK] Eddie_Vedder — 14 sections
+[SKIP] Eddie_And_The_Getaway — 'parse'
+[OK] Ed_Sheeran — 13 sections
+[OK] Earth,_Wind_&_Fire — 9 sections
+[OK] Eagles — 0 sections
+[SKIP] ERNEST — 'parse'
+[OK] EJAE — 0 sections
+[OK] Dylan_Gossett — 4 sections
+[OK] Dustin_Lynch — 4 sections
+[SKIP] Dust_&_Harmony — 'parse'
+[OK] Duran_Duran — 11 sections
+[OK] Duke_Ellington — 16 sections
+[OK] Dua_Lipa — 16 sections
+[OK] Drowning_Pool — 6 sections
+[OK] Drive-By_Truckers — 9 sections
+[OK] Dr._Hook — 8 sections
+[SKIP] Doreno — 'parse'
+[OK] Donovan — 16 sections
+[OK] Donavon_Frankenreiter — 3 sections
+[OK] Don_McLean — 15 sections
+[OK] Dominic_Fike — 3 sections
+[OK] Dolly_Parton — 30 sections
+[OK] Doja_Cat — 10 sections
+[OK] Djo — 0 sections
+[OK] Disturbed — 1 sections
+[OK] Dire_Straits — 6 sections
+[SKIP] Diggy_Graves — 'parse'
+[OK] Dierks_Bentley — 4 sections
+[OK] Diana_Krall — 4 sections
+[SKIP] Dexter_and_The_Moonrocks — 'parse'
+[OK] Depeche_Mode — 6 sections
+[OK] Delacruz — 0 sections
+[OK] Deftones — 7 sections
+[OK] Def_Leppard — 11 sections
+[OK] Deer_Tick — 0 sections
+[OK] Dean_Martin — 11 sections
+[OK] Dead_&_Company — 15 sections
+[OK] Dayseeker — 4 sections
+[OK] Dawes — 1 sections
+[OK] David_Guetta — 4 sections
+[OK] David_Bowie — 28 sections
+[OK] David_Allan_Coe — 10 sections
+[OK] Dave_Mason — 15 sections
+[OK] Daryl_Hall_&_John_Oates — 0 sections
+[OK] Darius_Rucker — 9 sections
+[OK] Dan_Fogelberg — 7 sections
+[OK] Dan_+_Shay — 6 sections
+[OK] Damien_Rice — 4 sections
+[OK] Daisy_Jones_&_The_Six — 0 sections
+[SKIP] DYSTINCT — 'parse'
+[OK] DJ_Khaled — 13 sections
+[OK] DDG — 0 sections
+[OK] Current_Joys — 0 sections
+[OK] Crowbar — 4 sections
+[OK] Crossfade — 1 sections
+[OK] Crosby,_Stills,_Nash_&_Young — 12 sections
+[OK] Crosby,_Stills_&_Nash — 0 sections
+[SKIP] Cristo_Nu — 'parse'
+[OK] Creepy_Nuts — 4 sections
+[OK] Creedence_Clearwater_Revival — 14 sections
+[OK] Creed — 10 sections
+[OK] Crazy_Horse — 20 sections
+[SKIP] Cozy_Coffee_Shop — 'parse'
+[SKIP] Cozy_Bedroom — 'parse'
+[OK] Count_Basie — 17 sections
+[OK] Couch — 4 sections
+[OK] Corey_Kent — 2 sections
+[OK] Cooper_Alan — 0 sections
+[OK] Connor_Price — 4 sections
+[OK] Confederate_Railroad — 5 sections
+[OK] Conan_Gray — 5 sections
+[OK] Colter_Wall — 4 sections
+[OK] Cole_Swindell — 6 sections
+[SKIP] Cole_Barnhill — 'parse'
+[OK] Coldplay — 12 sections
+[OK] Colby_O'Donis — 6 sections
+[OK] Cody_Johnson — 6 sections
+[OK] Clairo — 9 sections
+[OK] Cigarettes_After_Sex — 5 sections
+[SKIP] Cigarettes_@_Sunset — 'parse'
+[OK] Chris_Young — 1 sections
+[OK] Chris_Stapleton — 9 sections
+[OK] Chevelle — 1 sections
+[OK] Chet_Baker — 9 sections
+[OK] Chayce_Beckham — 2 sections
+[OK] Chase_Rice — 4 sections
+[OK] Chase_Matthew — 2 sections
+[OK] Charli_xcx — 0 sections
+[OK] Chappell_Roan — 10 sections
+[OK] Catch_Your_Breath — 0 sections
+[OK] Carrie_Underwood — 14 sections
+[OK] Carole_King — 16 sections
+[OK] Carly_Simon — 11 sections
+[OK] Carlos_Santana — 11 sections
+[OK] Caravan_Palace — 4 sections
+[OK] Car_Seat_Headrest — 2 sections
+[OK] Cannonball_Adderley — 5 sections
+[OK] Cameron_Whitcomb — 4 sections
+[SKIP] Calm_My_Pet — 'parse'
+[OK] Caissie_Levy — 3 sections
+[OK] Cage_The_Elephant — 0 sections
+[SKIP] Cafe_Music_BGM_channel — 'parse'
+[OK] Caamp — 3 sections
+[SKIP] Büken — 'parse'
+[OK] Bullet_For_My_Valentine — 0 sections
+[SKIP] Buffalo_Traffic_Jam — 'parse'
+[OK] Buffalo_Springfield — 10 sections
+[OK] Buena_Vista_Social_Club — 9 sections
+[OK] Bryan_Martin — 0 sections
+[OK] Bruno_Mars — 22 sections
+[OK] Bruce_Springsteen — 14 sections
+[OK] Brothers_Osborne — 6 sections
+[OK] Brooks_&_Dunn — 7 sections
+[OK] Britney_Spears — 12 sections
+[OK] Bring_Me_The_Horizon — 0 sections
+[OK] Brian_Culbertson — 5 sections
+[OK] Brett_Dennen — 4 sections
+[OK] Brent_Cobb — 4 sections
+[OK] Breaking_Benjamin — 7 sections
+[OK] Brantley_Gilbert — 4 sections
+[OK] Brad_Paisley — 9 sections
+[OK] BoyWithUke — 0 sections
+[OK] Bonobo — 17 sections
+[OK] Boney_James — 3 sections
+[OK] Bon_Jovi — 6 sections
+[OK] Bon_Iver — 5 sections
+[OK] Bohemia — 14 sections
+[OK] Bobby_McFerrin — 5 sections
+[OK] Bobby_Darin — 21 sections
+[OK] Bob_Seger — 12 sections
+[OK] Bob_Dylan — 24 sections
+[OK] Blxst — 3 sections
+[OK] Blumengarten — 0 sections
+[OK] Blake_Shelton — 11 sections
+[OK] Blackberry_Smoke — 3 sections
+[OK] Black_Sabbath — 9 sections
+[OK] Black_Label_Society — 5 sections
+[SKIP] Black_Gryph0n — 'parse'
+[OK] Black_Eyed_Peas — 5 sections
+[OK] Black_Box_Recorder — 1 sections
+[OK] Bishop_Briggs — 3 sections
+[OK] Bing_Crosby — 26 sections
+[OK] Billy_Squier — 6 sections
+[OK] Billy_Ray_Cyrus — 13 sections
+[OK] Billy_Joel — 13 sections
+[OK] Billy_Idol — 8 sections
+[OK] Billy_Currington — 4 sections
+[OK] Billie_Holiday — 17 sections
+[OK] Billie_Eilish — 11 sections
+[OK] Bill_Evans — 18 sections
+[OK] BigXthaPlug — 4 sections
+[OK] Big_&_Rich — 4 sections
+[OK] Beyoncé — 18 sections
+[OK] Benson_Boone — 5 sections
+[OK] Bella_Kay — 4 sections
+[OK] Beck — 9 sections
+[OK] Beartooth — 1 sections
+[OK] Beach_House — 10 sections
+
+Collected 4559 chunks across 750 artists.
+Full corpus written to /Users/harrisoncooley/Desktop/Programming_Fun/adaptive-playlist-agent/data-ingestion-pipeline/corpus_previews/full_data_previews/full_corpus_preview_20260621_154821.txt
+(.venv) harrisoncooley@MacBookPro adaptive-playlist-agent % 
